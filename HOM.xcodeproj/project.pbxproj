@@ -14,6 +14,12 @@
 		2C7AA1A4201A29DE00C8AE26 /* NSObject+IfResponds.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7AA1A2201A29DE00C8AE26 /* NSObject+IfResponds.m */; };
 		2C7AA1A7201A2B0A00C8AE26 /* IfRespondsProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C7AA1A5201A2B0A00C8AE26 /* IfRespondsProxy.h */; };
 		2C7AA1A8201A2B0A00C8AE26 /* IfRespondsProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7AA1A6201A2B0A00C8AE26 /* IfRespondsProxy.m */; };
+		2C7AA1B1201A44A400C8AE26 /* NSArray+Collect.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C7AA1AF201A44A400C8AE26 /* NSArray+Collect.h */; };
+		2C7AA1B2201A44A400C8AE26 /* NSArray+Collect.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7AA1B0201A44A400C8AE26 /* NSArray+Collect.m */; };
+		2C7AA1B4201A450A00C8AE26 /* NSArrayCollectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7AA1B3201A450A00C8AE26 /* NSArrayCollectTests.m */; };
+		2C7AA1B7201A764500C8AE26 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7AA1B6201A764500C8AE26 /* Person.m */; };
+		2C7AA1BA201A7C2C00C8AE26 /* CollectingTrampoline.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C7AA1B8201A7C2C00C8AE26 /* CollectingTrampoline.h */; };
+		2C7AA1BB201A7C2C00C8AE26 /* CollectingTrampoline.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7AA1B9201A7C2C00C8AE26 /* CollectingTrampoline.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +43,13 @@
 		2C7AA1A2201A29DE00C8AE26 /* NSObject+IfResponds.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+IfResponds.m"; sourceTree = "<group>"; };
 		2C7AA1A5201A2B0A00C8AE26 /* IfRespondsProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IfRespondsProxy.h; sourceTree = "<group>"; };
 		2C7AA1A6201A2B0A00C8AE26 /* IfRespondsProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IfRespondsProxy.m; sourceTree = "<group>"; };
+		2C7AA1AF201A44A400C8AE26 /* NSArray+Collect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+Collect.h"; sourceTree = "<group>"; };
+		2C7AA1B0201A44A400C8AE26 /* NSArray+Collect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Collect.m"; sourceTree = "<group>"; };
+		2C7AA1B3201A450A00C8AE26 /* NSArrayCollectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSArrayCollectTests.m; sourceTree = "<group>"; };
+		2C7AA1B5201A764500C8AE26 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		2C7AA1B6201A764500C8AE26 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		2C7AA1B8201A7C2C00C8AE26 /* CollectingTrampoline.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectingTrampoline.h; sourceTree = "<group>"; };
+		2C7AA1B9201A7C2C00C8AE26 /* CollectingTrampoline.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectingTrampoline.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +94,7 @@
 			children = (
 				2C7AA185201A291100C8AE26 /* HOM.h */,
 				2C7AA186201A291100C8AE26 /* Info.plist */,
+				2C7AA1AD201A445B00C8AE26 /* Collect */,
 				2C7AA1A9201A3A2600C8AE26 /* IfResponds */,
 			);
 			path = HOM;
@@ -90,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				2C7AA192201A291100C8AE26 /* Info.plist */,
+				2C7AA1AE201A447500C8AE26 /* Collect */,
 				2C7AA1AA201A3A2E00C8AE26 /* IfResponds */,
 			);
 			path = HOMTests;
@@ -114,6 +129,27 @@
 			path = IfResponds;
 			sourceTree = "<group>";
 		};
+		2C7AA1AD201A445B00C8AE26 /* Collect */ = {
+			isa = PBXGroup;
+			children = (
+				2C7AA1B8201A7C2C00C8AE26 /* CollectingTrampoline.h */,
+				2C7AA1B9201A7C2C00C8AE26 /* CollectingTrampoline.m */,
+				2C7AA1AF201A44A400C8AE26 /* NSArray+Collect.h */,
+				2C7AA1B0201A44A400C8AE26 /* NSArray+Collect.m */,
+			);
+			path = Collect;
+			sourceTree = "<group>";
+		};
+		2C7AA1AE201A447500C8AE26 /* Collect */ = {
+			isa = PBXGroup;
+			children = (
+				2C7AA1B3201A450A00C8AE26 /* NSArrayCollectTests.m */,
+				2C7AA1B5201A764500C8AE26 /* Person.h */,
+				2C7AA1B6201A764500C8AE26 /* Person.m */,
+			);
+			path = Collect;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -121,6 +157,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C7AA1B1201A44A400C8AE26 /* NSArray+Collect.h in Headers */,
+				2C7AA1BA201A7C2C00C8AE26 /* CollectingTrampoline.h in Headers */,
 				2C7AA1A7201A2B0A00C8AE26 /* IfRespondsProxy.h in Headers */,
 				2C7AA193201A291100C8AE26 /* HOM.h in Headers */,
 				2C7AA1A3201A29DE00C8AE26 /* NSObject+IfResponds.h in Headers */,
@@ -226,6 +264,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C7AA1A4201A29DE00C8AE26 /* NSObject+IfResponds.m in Sources */,
+				2C7AA1B2201A44A400C8AE26 /* NSArray+Collect.m in Sources */,
+				2C7AA1BB201A7C2C00C8AE26 /* CollectingTrampoline.m in Sources */,
 				2C7AA1A8201A2B0A00C8AE26 /* IfRespondsProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,7 +274,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C7AA1B7201A764500C8AE26 /* Person.m in Sources */,
 				2C7AA1A0201A299200C8AE26 /* IfRespodsTests.m in Sources */,
+				2C7AA1B4201A450A00C8AE26 /* NSArrayCollectTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

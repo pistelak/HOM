@@ -8,13 +8,10 @@
 
 #import "IfRespondsProxy.h"
 
-@interface IfRespondsProxy()
-
-@property (nonatomic, weak) id target;
-
-@end
-
 @implementation IfRespondsProxy
+{
+    id _target;
+}
 
 - (instancetype)initWithTarget:(id)target {
     _target = target;
@@ -32,7 +29,7 @@
     }
 }
 
-#pragma mark - Losing the message
+#pragma mark - "Losing" the message
 
 // Next methods are called only when real target doesn't understand the message.
 

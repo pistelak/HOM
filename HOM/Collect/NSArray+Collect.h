@@ -1,5 +1,5 @@
 //
-//  IfRespondsProxy.h
+//  NSArray+Collect.h
 //  HOM
 //
 //  Created by Radek Pistelak on 25/01/2018.
@@ -8,8 +8,8 @@
 
 @import Foundation;
 
-@interface IfRespondsProxy : NSProxy
+@interface NSArray (Collect)
 
-- (nonnull instancetype)initWithTarget:(nonnull id)target;
+- (nonnull id)collect;
 
 @end
