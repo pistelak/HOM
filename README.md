@@ -1,0 +1,1 @@
+https://travis-ci.org/pistelak/HOM.svg?branch=master
